@@ -64,7 +64,14 @@ def check_customer_churn(customer_id):
     if customer_data.empty:
         return f"Customer ID {customer_id} not found."
     prediction = customer_data["Predicted_Exited"].values[0]
-    return f"Customer ID {customer_id}: {'Will Churn' if prediction == 1 else 'Will Stay'}"
+    return f"Customer ID {customer_id}: {'Will Churn' if prediction == 1 else 'Will Stay'}
+    return f"Customer ID {customer_id}: {result}"
+
+# Get customer ID from user input
+customer_id = int(input("Enter Customer ID: "))
+
+# Check churn prediction for the entered ID
+print(check_customer_churn(customer_id))"
 ```
 
 ## **Results**
@@ -79,23 +86,6 @@ def check_customer_churn(customer_id):
 - Improve model recall for churn cases (e.g., using Gradient Boosting).
 - Create new features (e.g., customer engagement metrics).
 - Deploy model as an API for real-time predictions.
-
-## **How to Use**
-### **1. Clone Repository**
-```sh
-git clone https://github.com/your-repo/bank-churn-prediction.git
-cd bank-churn-prediction
-```
-
-### **2. Install Dependencies**
-```sh
-pip install -r requirements.txt
-```
-
-### **3. Run Prediction Script**
-```sh
-python predict_churn.py
-```
 
 ## **Conclusion**
 
