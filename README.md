@@ -1,6 +1,4 @@
-# PREDICTIVE-ANALYSIS-USING-MACHINE-LEARNING
-
-# **Bank Customer Churn Prediction**
+# **Bank Customer Churn Prediction - Predictive Analysis **
 
 ## **Project Overview**
 This project predicts whether a bank customer will **churn (leave the bank)** or **stay**, using machine learning. The dataset contains customer details, and a model is trained to generate predictions.
